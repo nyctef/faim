@@ -22,10 +22,17 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         RaycastHit hit;
-        if (!Physics.Raycast(transform.position, transform.forward, out hit, 100)) {
+        if (!Physics.Raycast(transform.position, transform.forward, out hit, 100))
+        {
             return;
         }
 
-        Debug.Log(hit.transform.name);
+        var hittable = hit.transform.gameObject.GetComponent<OnHittable>();
+        if (hittable == null)
+        {
+            return;
+        }
+
+        hittable.Hit(100);
     }
 }
