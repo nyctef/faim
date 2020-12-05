@@ -1,0 +1,7 @@
+- [ ] Need to remove the event handler attached in SpawnTargets.CreateNewTarget?
+- [ ] Add some basic vertex colors to make target look better
+- [ ] Some kind of scoring system / failure state?
+- [ ] Shiny effects when a target gets destroyed
+- [ ] More variations: multiple targets, moving targets, etc
+  - [ ] Menu system to pick between different modes
+- [ ] Fix flicker when standing near the wall?
